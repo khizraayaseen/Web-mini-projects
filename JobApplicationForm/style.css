@@ -1,0 +1,20 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: grey;
+}
+
+.center{
+    text-align: center;
+    background-color: rgb(143, 17, 95);
+    color: white;
+    font-weight: 100;
+}
+
+.table{
+    padding: 2%;
+    margin: 2%;
+}
+#infoTable{
+    display: none;
+}

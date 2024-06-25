@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applicant Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formRow">
+            <div class="formCol"></div>
+            <div class="formColwebForm">
+                <h3 class="center">Job Application Form</h3>
+                <form action="" method="">
+                    <label>Full name</label>
+                    <input type="text" class="form-control" required id="full_name">
+                    <br>
+
+                    <label>Phone no</label>
+                    <input type="text" class="form-control" required id="phone">
+                    <br>
+
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" required id="email">
+                    <br>
+
+                    <label>Street</label>
+                    <input type="text" class="form-control" required id="street">
+                    <br>
+
+                    <label>City</label>
+                    <input type="text" class="form-control" required id="city">
+                    <br>
+
+                    <label>State</label>
+                    <input type="text" class="form-control" required id="state">
+                    <br>
+                    
+                    <label>ZIP Code</label>
+                    <input type="number" class="form-control" required id="zipCode">
+                    <br>
+
+                    <label>Upload Resume</label>
+                    <input type="file" class="form-control" required id="uploadResume">
+                    <br>
+
+                    <label>Cover Letter</label>
+                    <textarea name="" rows="10" class="form-control" required id="coverLetter"></textarea>
+                    <br>
+
+                    <label>Highest Level of education </label>
+                    <input type="text" class="form-control" required id="education">
+                    <br>
+
+                    <label>School/University</label>
+                    <input type="text" class="form-control" required id="school">
+                    <br>
+
+                    <label>Major</label>
+                    <input type="text" class="form-control" required id="study">
+                    <br>
+
+                    <label>Graduation Year</label>
+                    <input type="text" class="form-control" required id="graduationYear">
+                    <br>
+
+                    <label>Employment History</label>
+                    <input type="text" class="form-control" required id="history">
+                    <br>
+
+                    <label>Company Names</label>
+                    <input type="text" class="form-control" required id="companyName">
+                    <br>
+
+                    <label>Employment Dates</label>
+                    <input type="text" class="form-control" required id="employmentDate">
+                    <br>
+
+                    <label>Job Responsibilities</label>
+                    <input type="text" class="form-control" required id="jobRresponsibilities">
+                    <br>
+
+                    <label>Relevant Skills</label>
+                    <input type="text" class="form-control" required id="skill">
+                    <br>
+
+                    <label>Certifications</label>
+                    <input type="text" class="form-control" required id="certifications">
+                    <br>
+
+                    <label>Start Date</label>
+                    <input type="text" class="form-control" required id="startDate">
+                    <br>
+
+                    <label>Preferred Work Schedule</label>
+                    <input type="text" class="form-control" required id="workSchedule">
+                    <br>
+
+                    <label>Willingness to Relocate</label>
+                    <input type="text" class="form-control" required id="relocate">
+                    <br>
+
+                    <label>Reference Name</label>
+                    <input type="text" class="form-control" required id="reference">
+                    <br>
+
+                    <label>Reference Contact Information</label>
+                    <input type="text" class="form-control" required id="contact">
+                    <br>
+
+
+                    <label>Relationship to Applicant</label>
+                    <input type="text" class="form-control" required id="relation">
+                    <br>
+
+                    <label>Why do you want to work for this company?</label>
+                    <input type="text" class="form-control" required id="workForCompany">
+                    <br>
+
+                    <input type="checkbox" value="terms" id="terms">
+                    <label>Agreeing to terms and conditions</label>
+                    <br>
+
+                    <input type="checkbox" value="policy" id="policy">
+                    <label>Privacy Policy acknowledgment</label>
+                    <br>
+
+                    <span class="btn btn-primary" onclick="SubmitForm()">Submit</span>
+                </form>
+                <br>
+                <button class="btn btn-primary" onclick="addRow()">View Applications as Table</button>
+            </div>
+            <div class="formCol"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="colLg" id="infoTable">
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th>Full_name</th>
+                        <th>Email</th>
+                        <th>Phone no</th>
+                        <th>Street</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>ZIP Code</th>
+                        <th>Upload Resume</th>
+                        <th>Cover Letter</th>
+                        <th>Highest Level of education</th>
+                        <th>School/University</th>
+                        <th>Area of Study</th>
+                        <th>Graduation Year</th>
+                        <th>Employment History</th>
+                        <th>Company Names</th>
+                        <th>Employment Dates</th>
+                        <th>Job Responsibilities</th>
+                        <th>Relevant Skills</th>
+                        <th>Certifications</th>
+                        <th>Start Date</th>
+                        <th>Preferred Work Schedule</th>
+                        <th>Willingness to Relocate</th>
+                        <th>Reference Name</th>
+                        <th>Reference Contact Information</th>
+                        <th>Relationship to Applicant</th>
+                        <th>Why do you want to work for this company?</th>
+                        <th>Agreeing to terms and conditions</th>
+                        <th>Privacy Policy acknowledgment</th>
+    
+                    </tr>
+                </thead>
+                <tbody id="addData">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

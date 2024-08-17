@@ -1,0 +1,32 @@
+body{
+    border-style: groove;
+    margin:20%;
+}
+
+._signin{
+    border-bottom: ridge;
+    padding-bottom: 10px;
+}
+
+._notregistered{
+    border-top: ridge;
+    padding-top: 10px;
+}
+._textbox{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+._password{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.group {
+    display: flex;
+}
+  
+.col{
+    flex: 50%;
+    padding: 10px;
+    height: 250px;
+}

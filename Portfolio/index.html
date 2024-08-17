@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Khizra Yaseen</h1>
+        <p>Software Developer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Passionate Software Development</p>
+        </section>
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JS</div>
+                <div class="skill">React</div>
+            </div>
+        </section>
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Clothify</h3>
+                    <p>Clothify is an online store for clothes, made using the MERN stack 
+                        (MongoDB, Express.js, React, and Node.js). It offers a smooth shopping experience with easy navigation, 
+                        allowing users to browse and buy clothing items effortlessly. Built with the powerful MERN stack, 
+                        Clothify is fast and reliable, ready to meet the needs of fashion shoppers online.</p>
+                </div>
+                <div class="project">
+                    <h3>Price Prediction Using AI/ML</h3>
+                    <p>The Clothes Price Prediction project utilizes ML (Machine Learning) Algorithms to 
+                        predict the prices of clothing items based on multiple features. 
+                        By training a Linear Regression model on a dataset containing relevant features 
+                        such as brand, material, size, and color, the project achieves accurate 
+                        predictions of clothing prices.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Khizra Yaseen</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
